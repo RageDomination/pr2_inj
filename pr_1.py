@@ -25,7 +25,7 @@ root.geometry("200x150")
 entry = tk.Entry(root)
 entry.pack()
 
-add_btn = tk.Button(root, text="Confirm", command=add_task)  # змiнено онлайн
+add_btn = tk.Button(root, text="Add Task", command=add_task)  # локально
 add_btn.pack()
 
 delete_btn = tk.Button(root, text="Delete", command=delete_task) # кнопка видалити завдання
