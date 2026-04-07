@@ -25,13 +25,13 @@ root.geometry("200x150")
 entry = tk.Entry(root)
 entry.pack()
 
-add_btn = tk.Button(root, text="OK", command=add_task)
+add_btn = tk.Button(root, text="OK", command=add_task) # кнопка додати завдання
 add_btn.pack()
 
-delete_btn = tk.Button(root, text="Delete", command=delete_task)
+delete_btn = tk.Button(root, text="Delete", command=delete_task) # кнопка видалити завдання
 delete_btn.pack()
 
-clear_btn = tk.Button(root, text="Clear All", command=clear_tasks)
+clear_btn = tk.Button(root, text="Clear All", command=clear_tasks) # кнопка стерти все
 clear_btn.pack()
 
 listbox = tk.Listbox(root)
