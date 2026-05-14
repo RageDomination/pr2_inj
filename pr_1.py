@@ -22,8 +22,10 @@ def clear_tasks():
     listbox.delete(0, tk.END)
 
 root = tk.Tk()
-root.title("Task Manager") # назва вiкна
-root.geometry("400x300") # розмi стартового вiкна
+root.title("Task Manager")
+root.geometry("400x300")
+root.minsize(300, 200)
+root.resizable(True, True)
 
 entry = tk.Entry(root, width=40)
 entry.pack()
