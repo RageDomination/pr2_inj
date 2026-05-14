@@ -4,9 +4,12 @@ tasks = []
 
 # функцiя додавання
 def add_task():
-    task = entry.get()
+    task = entry.get().strip()
+    if task == "":
+        return
     tasks.append(task)
     listbox.insert(tk.END, task)
+    entry.delete(0, tk.END)
 
 # функцiя видалення
 def delete_task():
