@@ -24,7 +24,7 @@ root = tk.Tk()
 root.title("Task Manager") # назва вiкна
 root.geometry("400x300") # розмi стартового вiкна
 
-entry = tk.Entry(root)
+entry = tk.Entry(root, width=40)
 entry.pack()
 
 add_btn = tk.Button(root, text="Add Task", command=add_task)  # локально
@@ -36,6 +36,6 @@ delete_btn.pack()
 clear_btn = tk.Button(root, text="Clear All", command=clear_tasks) # кнопка стерти все
 clear_btn.pack()
 
-listbox = tk.Listbox(root)
+listbox = tk.Listbox(root, width=40)
 listbox.pack()
 root.mainloop()
