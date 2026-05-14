@@ -19,9 +19,7 @@ def delete_task():
 
 # функцiя стерти все
 def clear_tasks():
-    length = listbox.size()
-    for i in range(length // 2):
-        listbox.delete(0)
+    listbox.delete(0, tk.END)
 
 root = tk.Tk()
 root.title("Task Manager") # назва вiкна
