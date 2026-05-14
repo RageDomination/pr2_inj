@@ -22,7 +22,7 @@ def clear_tasks():
 
 root = tk.Tk()
 root.title("My App") # назва вiкна
-root.geometry("200x150") # розмi стартового вiкна
+root.geometry("400x300") # розмi стартового вiкна
 
 entry = tk.Entry(root)
 entry.pack()
