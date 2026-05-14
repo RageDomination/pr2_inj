@@ -38,5 +38,4 @@ clear_btn.pack()
 
 listbox = tk.Listbox(root)
 listbox.pack()
-
 root.mainloop()
