@@ -5,7 +5,7 @@ tasks = []
 # функцiя додавання
 def add_task():
     task = entry.get().strip()
-    if task == "":
+    if not task:
         return
     tasks.append(task)
     listbox.insert(tk.END, task)
