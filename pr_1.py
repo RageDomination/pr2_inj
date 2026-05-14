@@ -7,7 +7,7 @@ def add_task():
     task = entry.get().strip()
     if not task:
         return
-    tasks.append(task)
+    tasks.appnd(task)
     listbox.insert(tk.END, task)
     entry.delete(0, tk.END)
 
